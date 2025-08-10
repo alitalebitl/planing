@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پکیج تحول ۳۰ روزه - برنامه شخصی‌سازی شده بدنسازی</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Vazirmatn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        /* استایل برای گرادینت دکمه و هایلایت‌ها */
+        .gradient-text {
+            background: linear-gradient(to left, #fde047, #facc15);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(to top left, #facc15, #eab308);
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 1)), url('https://uploadkon.ir/uploads/339210_251.jpg?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        /* استایل برای آیکون آکاردئون */
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+        .accordion-header[aria-expanded="true"] .accordion-icon {
+            transform: rotate(180deg);
+        }
+        /* انیمیشن برای نوار ظرفیت محدود */
+        @keyframes pulse-light {
+          50% {
+            box-shadow: 0 0 0 4px rgba(250, 204, 21, 0);
+          }
+          100% {
+            box-shadow: 0 0 0 0 rgba(250, 204, 21, 0);
+          }
+        }
+        .animate-pulse-light {
+          animation: pulse-light 2s infinite;
+          box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Hero Section -->
+    <header class="hero-bg">
+        <div class="container mx-auto px-6 py-20 text-center">
+            <h1 class="text-4xl md:text-6xl font-black text-white leading-tight">
+                فقط در ۳۰ روز،
+                <br>
+                <span class="gradient-text">بدنی بساز که همه را انگشت به دهان کند</span>
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+                دیگر وقت تلف نکن. نقشه راه شخصی‌سازی شده تو برای یک تحول انفجاری، همین حالا آماده است.
+            </p>
+            <a href="#pricing" class="mt-8 inline-block gradient-bg text-gray-900 font-bold text-lg px-10 py-4 rounded-lg shadow-lg shadow-yellow-500/20 hover:scale-105 transition-transform duration-300">
+                مشاهده پکیج‌ها
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Problem/Agitate Section -->
+        <section class="py-16 sm:py-24 bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">آیا این سناریو برایت آشنا نیست؟</h2>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">ماه‌هاست در باشگاه عرق می‌ریزی، اما خبری از آن بدن ایده‌آل نیست. برنامه‌های تکراری و عمومی، انرژی‌ات را گرفته و <strong class="text-red-400">ناامیدت کرده.</strong></p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-xl border border-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <h3 class="mt-4 text-xl font-bold text-white">برنامه‌های بی‌اثر</h3>
+                        <p class="mt-2 text-gray-400">برنامه‌هایی که از اینترنت دانلود می‌کنی یا از دوستت می‌گیری، برای بدن تو طراحی نشده‌اند و فقط <strong class="text-yellow-400">وقتت را تلف می‌کنند.</strong></p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl border border-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5-2.98-6.34A8.001 8.001 0 0117.657 18.657z" /></svg>
+                        <h3 class="mt-4 text-xl font-bold text-white">تغذیه اشتباه</h3>
+                        <p class="mt-2 text-gray-400">سخت تمرین می‌کنی اما چون نمی‌دانی چه چیزی و چه زمانی بخوری، <strong class="text-yellow-400">نتیجه‌ای نمی‌گیری</strong> و چربی‌ها سر جایشان هستند.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl border border-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <h3 class="mt-4 text-xl font-bold text-white">ناامیدی و بی‌انگیزگی</h3>
+                        <p class="mt-2 text-gray-400">وقتی بعد از ماه‌ها تلاش، تغییری در آینه نمی‌بینی، طبیعی است که <strong class="text-yellow-400">انگیزه‌ات را از دست بدهی.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution / What You Get Section -->
+        <section class="py-16 sm:py-24 bg-gray-800/50">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">راه حل اینجاست: یک <span class="gradient-text">نقشه راه ۱۰۰٪ شخصی</span></h2>
+                    <p class="mt-4 text-gray-400 max-w-3xl mx-auto">مشکل از تو نیست، از برنامه توست. ما یک سیستم کامل و دقیق را فقط برای بدن، هدف و سبک زندگی **تو** طراحی می‌کنیم.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-xl font-bold text-yellow-400">برنامه تمرینی اختصاصی</h3>
+                        <p class="mt-2 text-gray-300">نه یک PDF کپی شده! برنامه‌ای که بر اساس تیپ بدنی، سابقه تمرینی و اهداف تو (حجم، کات یا قدرت) مو به مو طراحی می‌شود.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-xl font-bold text-yellow-400">رژیم غذایی هوشمند</h3>
+                        <p class="mt-2 text-gray-300">یک برنامه غذایی انعطاف‌پذیر و دقیق که به تو می‌گوید چه بخوری، چقدر بخوری و کی بخوری تا چربی‌سوزی و عضله‌سازی به اوج برسد.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-xl font-bold text-yellow-400">پروتکل هوازی دقیق</h3>
+                        <p class="mt-2 text-gray-300">برنامه‌ی دقیق هوازی برای سوزاندن آخرین ذره‌های چربی سرسخت بدن و رسیدن به تفکیک عضلانی بی‌نظیر.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg text-center transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-xl font-bold text-yellow-400">پشتیبانی و راهنمایی</h3>
+                        <p class="mt-2 text-gray-300">پشتیبانی کامل با مربی و راهنمای مصرف مکمل‌ها و ویتامین‌های ضروری برای ریکاوری سریع‌تر و رشد بیشتر.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Social Proof - Transformations Slider -->
+        <section class="py-16 sm:py-24 bg-gray-900">
+             <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white text-center">نتایج واقعی، نه وعده‌های توخالی</h2>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto text-center">بیش از <strong class="text-yellow-400">۵۰۰ ورزشکار</strong> با سیستم ما به بدن ایده‌آلشان رسیده‌اند. این فقط چند نمونه از آنهاست.</p>
+                <div id="slider" class="mt-12 relative max-w-4xl mx-auto overflow-hidden rounded-lg shadow-2xl">
+                    <div id="slider-container" class="flex transition-transform duration-500 ease-in-out">
+                        <div class="w-full flex-shrink-0 grid grid-cols-2 gap-2">
+                            <img src="https://placehold.co/600x800/1f2937/facc15?text=Before+1" alt="عکس قبل از برنامه" class="rounded-lg object-cover w-full h-full" onerror="this.onerror=null;this.src='https://placehold.co/600x800/1f2937/facc15?text=Image+Not+Found';">
+                            <img src="https://placehold.co/600x800/1f2937/facc15?text=After+1" alt="عکس بعد از برنامه" class="rounded-lg object-cover w-full h-full" onerror="this.onerror=null;this.src='https://placehold.co/600x800/1f2937/facc15?text=Image+Not+Found';">
+                        </div>
+                        <div class="w-full flex-shrink-0 grid grid-cols-2 gap-2">
+                            <img src="https://placehold.co/600x800/1f2937/fde047?text=Before+2" alt="عکس قبل از برنامه" class="rounded-lg object-cover w-full h-full" onerror="this.onerror=null;this.src='https://placehold.co/600x800/1f2937/fde047?text=Image+Not+Found';">
+                            <img src="https://placehold.co/600x800/1f2937/fde047?text=After+2" alt="عکس بعد از برنامه" class="rounded-lg object-cover w-full h-full" onerror="this.onerror=null;this.src='https://placehold.co/600x800/1f2937/fde047?text=Image+Not+Found';">
+                        </div>
+                        <div class="w-full flex-shrink-0 grid grid-cols-2 gap-2">
+                             <img src="https://placehold.co/600x800/1f2937/eab308?text=Before+3" alt="عکس قبل از برنامه" class="rounded-lg object-cover w-full h-full" onerror="this.onerror=null;this.src='https://placehold.co/600x800/1f2937/eab308?text=Image+Not+Found';">
+                            <img src="https://placehold.co/600x800/1f2937/eab308?text=After+3" alt="عکس بعد از برنامه" class="rounded-lg object-cover w-full h-full" onerror="this.onerror=null;this.src='https://placehold.co/600x800/1f2937/eab308?text=Image+Not+Found';">
+                        </div>
+                    </div>
+                    <button id="prevBtn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-700 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                    </button>
+                    <button id="nextBtn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800/50 text-white p-2 rounded-full hover:bg-gray-700 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Coach Section -->
+        <section class="py-16 sm:py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="bg-gray-900 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+                    <img src="https://uploadkon.ir/uploads/f9a010_25photo-2025-08-10-15-14-57.jpg" alt="عکس مربی" class="w-48 h-48 rounded-full object-cover border-4 border-yellow-400 flex-shrink-0">
+                    <div class="text-center md:text-right">
+                        <h2 class="text-3xl font-bold text-white">با مربی خود آشنا شوید</h2>
+                        <p class="mt-4 text-gray-300">من [نام مربی] هستم، با بیش از ۱۰ سال سابقه در طراحی برنامه‌های تمرینی و تغذیه. ماموریت من این است که به شما کمک کنم از حد و مرزهایتان فراتر بروید و به بدنی که همیشه آرزویش را داشتید برسید. <span class="block mt-2 text-yellow-300 font-semibold">من فقط به شما برنامه نمی‌دهم؛ من تا روز آخر در کنار شما هستم تا موفقیت شما را تضمین کنم.</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16 sm:py-24 bg-gray-900">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">هنوز سوالی در ذهن دارید؟</h2>
+                    <p class="mt-4 text-gray-400">پاسخ سوالات پرتکرار شما را اینجا داده‌ایم.</p>
+                </div>
+                <div class="space-y-4" id="faq-accordion">
+                    <div class="bg-gray-800 rounded-lg">
+                        <h2>
+                            <button type="button" class="accordion-header flex justify-between items-center w-full p-6 text-xl font-bold text-right text-white hover:bg-gray-700 rounded-lg" aria-expanded="false">
+                                <span>این برنامه برای چه کسانی مناسب است؟</span>
+                                <svg class="accordion-icon w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </h2>
+                        <div class="accordion-content hidden">
+                            <div class="p-6 pt-0 text-gray-300">
+                                <p>این پکیج برای هر مرد ۲۰ تا ۳۰ ساله‌ای که از نتایج فعلی خود راضی نیست و می‌خواهد به صورت جدی و علمی به بدن ایده‌آل خود برسد، طراحی شده است؛ چه مبتدی باشید و چه سابقه تمرینی داشته باشید.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg">
+                        <h2>
+                            <button type="button" class="accordion-header flex justify-between items-center w-full p-6 text-xl font-bold text-right text-white hover:bg-gray-700 rounded-lg" aria-expanded="false">
+                                <span>اگر نحوه اجرای حرکات را بلد نباشم چه؟</span>
+                                <svg class="accordion-icon w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </h2>
+                        <div class="accordion-content hidden">
+                            <div class="p-6 pt-0 text-gray-300">
+                                <p>جای هیچ نگرانی نیست. هدیه ویژه ما یعنی **کانال VIP** شامل ویدیوهای آموزشی کامل و باکیفیت برای تمام حرکات است تا هر حرکت را با فرم صحیح اجرا کرده و از آسیب‌دیدگی جلوگیری کنید.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg">
+                        <h2>
+                            <button type="button" class="accordion-header flex justify-between items-center w-full p-6 text-xl font-bold text-right text-white hover:bg-gray-700 rounded-lg" aria-expanded="false">
+                                <span>چقدر طول می‌کشد تا نتایج را ببینم؟</span>
+                                <svg class="accordion-icon w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </h2>
+                        <div class="accordion-content hidden">
+                            <div class="p-6 pt-0 text-gray-300">
+                                <p>با پایبندی دقیق به برنامه تمرینی و غذایی، اکثر افراد در همان **۲ هفته اول** تغییرات محسوسی در انرژی، وزن و فرم بدن خود مشاهده می‌کنند. تحول اصلی در پایان ماه اول کاملاً مشهود خواهد بود.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-lg">
+                        <h2>
+                            <button type="button" class="accordion-header flex justify-between items-center w-full p-6 text-xl font-bold text-right text-white hover:bg-gray-700 rounded-lg" aria-expanded="false">
+                                <span>آیا این برنامه گارانتی هم دارد؟</span>
+                                <svg class="accordion-icon w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </h2>
+                        <div class="accordion-content hidden">
+                            <div class="p-6 pt-0 text-gray-300">
+                                <p>بله! ما به سیستم خود ۱۰۰٪ اطمینان داریم. به همین دلیل، این پکیج شامل **گارانتی بازگشت وجه ۷ روزه** است. اگر به هر دلیلی از برنامه راضی نبودید، کافیست به ما اطلاع دهید تا تمام وجه شما بدون هیچ سوالی بازگردانده شود. <strong class="text-green-400">ریسک شما صفر است.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-16 sm:py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <!-- Scarcity Bar -->
+                <div class="max-w-4xl mx-auto mb-8 p-4 bg-yellow-400/10 border-2 border-yellow-400 rounded-lg text-center animate-pulse-light">
+                    <p class="font-bold text-yellow-300">توجه: به دلیل تعهد به کیفیت پشتیبانی، ظرفیت پذیرش در این ماه فقط برای <span class="text-white text-lg">۷</span> نفر دیگر باقی مانده است.</p>
+                </div>
+
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">پلن مناسب خودت را برای یک سرمایه‌گذاری هوشمند انتخاب کن</h2>
+                    <p class="mt-4 text-gray-400 max-w-3xl mx-auto">این یک هزینه نیست، بلکه بهترین سرمایه‌گذاری روی مهم‌ترین دارایی تو یعنی بدنت است.</p>
+                </div>
+                
+                <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                    <div class="bg-gray-900 rounded-2xl p-8 border-2 border-yellow-400 shadow-2xl shadow-yellow-500/10 relative h-full flex flex-col">
+                        <span class="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-yellow-400 text-gray-900 text-sm font-bold px-4 py-1 rounded-full">محبوب ترین</span>
+                        <h3 class="text-2xl font-bold text-center text-white">پکیج تحول ۳۰ روزه</h3>
+                        <p class="text-center mt-2 text-yellow-400">نقشه راه کامل برای شروع</p>
+                        <div class="mt-8 pt-6 border-t border-gray-700 space-y-4 text-gray-300 flex-grow">
+                            <p class="flex justify-between"><span>برنامه تمرینی اختصاصی</span> <span class="font-semibold">۶۰۰,۰۰۰ ت</span></p>
+                            <p class="flex justify-between"><span>برنامه غذایی هوشمند</span> <span class="font-semibold">۵۰۰,۰۰۰ ت</span></p>
+                            <p class="flex justify-between"><span>پشتیبانی، هوازی و مکمل</span> <span class="font-semibold">۳۰۰,۰۰۰ ت</span></p>
+                            <p class="flex justify-between text-yellow-400"><span>🎁 عضویت دائمی کانال VIP</span> <span class="font-semibold">۴۹۰,۰۰۰ ت</span></p>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-gray-700 text-center">
+                            <p class="text-gray-400 text-lg">مجموع ارزش: <span class="line-through">۱,۸۹۰,۰۰۰</span> تومان</p>
+                            <p class="mt-4 text-4xl md:text-5xl font-black text-white">
+                               فقط <span class="gradient-text">۹۹۰,۰۰۰</span>
+                               <span class="text-xl font-normal text-gray-400"> تومان</span>
+                            </p>
+                        </div>
+                        <a href="#" class="mt-10 w-full text-center block gradient-bg text-gray-900 font-bold text-lg px-8 py-4 rounded-lg shadow-lg shadow-yellow-500/20 hover:scale-105 transition-transform duration-300">
+                           انتخاب پکیج محبوب
+                        </a>
+                        <p class="text-center mt-4 text-sm text-gray-500">پس از پرداخت، رسید را به آیدی تلگرام <strong class="text-yellow-400">[YourTelegramID]</strong> ارسال کنید.</p>
+                    </div>
+                    <div class="bg-gray-900 rounded-2xl p-8 border-2 border-gray-700 h-full flex flex-col">
+                        <h3 class="text-2xl font-bold text-center text-white">پکیج VIP + مشاوره</h3>
+                        <p class="text-center mt-2 text-gray-400">نتیجه قطعی با پشتیبانی ویژه</p>
+                        <div class="mt-8 pt-6 border-t border-gray-700 space-y-4 text-gray-300 flex-grow">
+                            <p class="flex justify-between"><span>پکیج استاندارد کامل</span> <span class="font-semibold">۱,۸۹۰,۰۰۰ ت</span></p>
+                            <p class="flex justify-between font-bold text-yellow-300"><span>⭐ مشاوره تلفنی خصوصی</span> <span class="font-semibold">۱,۰۰۰,۰۰۰ ت</span></p>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-gray-700 text-center">
+                            <p class="text-gray-400 text-lg">مجموع ارزش: <span class="line-through">۲,۸۹۰,۰۰۰</span> تومان</p>
+                            <p class="mt-4 text-4xl md:text-5xl font-black text-white">
+                               فقط <span class="gradient-text">۱,۹۹۰,۰۰۰</span>
+                               <span class="text-xl font-normal text-gray-400"> تومان</span>
+                            </p>
+                        </div>
+                        <a href="#" class="mt-10 w-full text-center block bg-gray-700 text-white font-bold text-lg px-8 py-4 rounded-lg hover:bg-gray-600 transition-colors duration-300">
+                            انتخاب پکیج VIP
+                        </a>
+                        <p class="text-center mt-4 text-sm text-gray-500">پس از پرداخت، رسید را به آیدی تلگرام <strong class="text-yellow-400">[YourTelegramID]</strong> ارسال کنید.</p>
+                    </div>
+                </div>
+                <!-- Guarantee Box -->
+                <div class="max-w-3xl mx-auto mt-12 p-6 bg-gray-800/50 border-2 border-green-400 rounded-lg text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    <h3 class="mt-4 text-2xl font-bold text-green-400">گارانتی رضایت ۱۰۰٪: با خیال راحت شروع کن!</h3>
+                    <p class="mt-2 text-gray-300">ما به کارمان ایمان داریم. اگر تا ۷ روز پس از دریافت برنامه، به هر دلیلی احساس کردید این برنامه برای شما مناسب نیست، کافیست به ما اطلاع دهید تا <strong class="text-white">تمام وجه پرداختی شما</strong> را بدون هیچ سوالی بازگردانیم.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; ۱۴۰۳ - تمام حقوق برای تیم ما محفوظ است.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+             // Typing Effect Logic
+            const textToType = "بدنی بساز که همه را انگشت به دهان کند";
+            const typingElement = document.getElementById('typing-text');
+            const cursorElement = document.getElementById('cursor');
+            
+            if (typingElement) {
+                let i = 0;
+                function typeWriter() {
+                    if (i < textToType.length) {
+                        typingElement.innerHTML += textToType.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 80); // Slightly faster speed
+                    } else {
+                        // End of typing
+                        if(cursorElement) cursorElement.style.display = 'none';
+                    }
+                }
+                typeWriter();
+            }
+
+            // Slider Logic
+            const sliderContainer = document.getElementById('slider-container');
+            const slides = sliderContainer.children;
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentIndex = 0;
+            const totalSlides = slides.length;
+
+            function updateSlider() {
+                sliderContainer.style.transform = `translateX(${currentIndex * 100}%)`;
+            }
+            
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateSlider();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSlider();
+            });
+
+            setInterval(() => {
+                nextBtn.click();
+            }, 5000);
+
+            // Accordion Logic
+            const accordion = document.getElementById('faq-accordion');
+            accordion.addEventListener('click', (e) => {
+                const header = e.target.closest('.accordion-header');
+                if (!header) return;
+
+                const content = header.parentElement.nextElementSibling;
+                const isExpanded = header.getAttribute('aria-expanded') === 'true';
+
+                // Close all other accordions
+                const allHeaders = accordion.querySelectorAll('.accordion-header');
+                allHeaders.forEach(h => {
+                    if (h !== header) {
+                        h.setAttribute('aria-expanded', 'false');
+                        h.parentElement.nextElementSibling.classList.add('hidden');
+                    }
+                });
+
+                // Toggle the clicked one
+                header.setAttribute('aria-expanded', !isExpanded);
+                content.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
